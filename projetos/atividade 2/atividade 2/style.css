@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'DS-DIGI';
+    src: url('ds_digital/DS-DIGI.TTF') format('truetype'),
+         url('ds_digital/DS-DIGIB.TTF') format('truetype'),
+         url('ds_digital/DS-DIGII.TTF') format('truetype'),
+         url('ds_digital/DS-DIGIT.TTF') format('truetype');
+}
+
+body{
+    background-image: linear-gradient(gray, black);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.calc{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    width: 200px;
+    background-color: black;
+    border-radius: 5px;    
+    padding: 20px;
+}
+
+.display{
+    background-color: white;
+    height: 40px;
+    width: auto;
+    word-wrap: normal;
+    overflow: hidden;
+    border-radius: 5px;
+    font-family: 'DS-DIGI', sans-serif;
+    font-size: 30px;
+}
+
+.btn{
+    font: 1em sans-serif;
+    color: #fff;
+    background-image: linear-gradient(gray, black);
+    border-radius: 5px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+/* ======== BOTÃO VOLTAR ======== */
+
+.btn-voltar {
+    /* Posicionamento Fixo */
+    position: fixed;
+    top: 20px;  /* 20px do topo */
+    left: 20px; /* 20px da esquerda */
+    z-index: 1000; /* Garante que ele fique na frente de tudo */
+
+    /* Estilo (pode mudar como quiser) */
+    background-color: #ffffff;  /* Fundo escuro */
+    color: #00bcd4;           /* Texto ciano (cor do portfólio) */
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    border: 1px solid #00bcd4;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.btn-voltar:hover {
+    background-color: #00bcd4;
+    color: #1a1a1a;
+}

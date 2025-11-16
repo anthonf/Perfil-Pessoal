@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4fdf6;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background:#1C8051;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+.btn-voltar {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  
+  background-color: #ffffff;
+  color: #00bcd4;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  border: 1px solid #00bcd4;
+  transition: all 0.3s ease;
+}
+
+.btn-voltar:hover {
+  background-color: #00bcd4;
+  color: #1a1a1a;
+}
+
+
+.container {
+  flex: 1;
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.left {
+  flex: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.left .big {
+  grid-column: span 2;
+  padding: 15px;
+  border: 2px solid #2e7d32;
+  border-radius: 8px;
+  background: #fff;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.left .big:hover {
+  grid-column: span 2;
+  padding: 15px;
+  border: 2px solid #2e7d32;
+  border-radius: 8px;
+  background: #fff;
+  transition: 0.3s;
+  transform: scale(1.1);
+  
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.left .small {
+  padding: 15px;
+  border: 2px solid #66bb6a;
+  border-radius: 8px;
+  background: #fff;
+  
+}
+
+.left .small:hover {
+  padding: 15px;
+  border: 2px solid #66bb6a;
+  border-radius: 8px;
+  background: #fff;
+  transition: 0.3s;
+  transform: scale(1.1);
+  
+}
+
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  left: auto;
+  margin-right: 30px;
+}
+
+.right .box {
+  margin-right: auto;
+  padding: 15px;
+  border: 2px solid #81c784;
+  border-radius: 10px;
+  background: #fff;
+  
+}
+
+.right .box:hover {
+  margin-right: auto;
+  padding: 15px;
+  border: 2px solid #81c784;
+  border-radius: 8px;
+  background: #fff;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.right .lines {
+  margin-right: auto;
+  padding: 15px;
+  border: 2px solid #a5d6a7;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.right .lines:hover {
+  margin-right: auto;
+  padding: 15px;
+  border: 2px solid #a5d6a7;
+  border-radius: 8px;
+  background: #fff;
+  transition: 0.3s;
+  transform: scale(1.1);
+
+}
+
+
+.right .lines ul {
+  padding-left: 20px;
+  margin: 10px 0 0 0;
+}
+
+.right .lines li {
+  margin-bottom: 8px;
+}
+
+
+footer {
+  background: #0E4029;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    grid-template-columns: 1fr;
+  }
+
+  .left .big {
+    grid-column: span 1;
+  }
+}
+
+.contato-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contato-form label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.contato-form input,
+.contato-form textarea {
+  padding: 10px;
+  border: 2px solid #66bb6a;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+  outline: none;
+  border-color: #2e7d32;
+  box-shadow: 0 0 5px rgba(46, 125, 50, 0.4);
+}
+
+.contato-form button {
+  background: #1C8051;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.contato-form button:hover {
+  background: #155c3a;
+}
+
+/* Regras CSS */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+body, p, a, li, input, textarea {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+blockquote, .destaque, .numero-destaque {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
